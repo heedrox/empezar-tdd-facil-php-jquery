@@ -1,0 +1,27 @@
+{
+  "name": "empezar-tdd-app",
+  "version": "1.0.0",
+  "description": "App ejemplo con backend php y frontend jquery. Objetivo: empezar tdd rápidamente.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests-js"
+  },
+  "scripts": {
+    "test-js": "karma start tests-js/karma.conf.js"
+  },
+  "keywords": [
+    "empezar",
+    "tdd"
+  ],
+  "author": "Jordi Marti - INIT <jmarti@theinit.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "jasmine-jquery": "^2.1.1",
+    "karma": "^1.5.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "phantomjs": "^2.1.7"
+  }
+}
