@@ -1,0 +1,47 @@
+{% extends "layout.html.twig" %}
+{% set active_page = "capitulo5" %}
+{% block content %}
+    <p>&nbsp;</p>
+    <div class="page-header"><h1>Bienvenido</h1></div>
+    <div class="row">
+        <div class="col-xs-12">
+            <form>
+                <div class="form-group">
+                    <label for="email">Dirección de email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="fechaNacimiento">
+                </div>
+                <div class="form-group">
+                    <label for="paquete">Selecciona el paquete a adquirir</label>
+                    <select class="form-control" id="paquete">
+                        <option value=""> -- Selecciona -- </option>
+                        <option value="BASICO">Básico (50 eur)</option>
+                        <option value="AVANZADO">Avanzado (200 eur)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="numMensualidades">Número de mensualidades a hacer el pago</label>
+                    <input class="form-control" type="number" min="1" max="10" id="numMensualidades">
+                    <p class="help-block">Pago mensual: <span id="pagoMensual"></span></p>
+                </div>
+                <div class="form-group">
+                    <label for="numMensualidades">Tarjeta VISA</label>
+                    <input class="form-control" type="text" id="tarjetaVisa">
+                </div>
+
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Acepto las condiciones legales
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-default">Enviar</button>
+            </form>
+
+        </div>
+    </div>
+
+{% endblock %}

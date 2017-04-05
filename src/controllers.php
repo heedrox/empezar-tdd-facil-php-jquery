@@ -14,9 +14,14 @@ $app->get('/', function () use ($app) {
 ->bind('homepage')
 ;
 
-$app->get('/capitulo3', function() use ($app) {
+$app->get('/capitulo4', function() use ($app) {
+    return $app['twig']->render('capitulo4.html.twig', array());
+})->bind('capitulo4');
 
-})->bind('capitulo3');
+$app->get('/capitulo5', function() use ($app) {
+    return $app['twig']->render('capitulo5.html.twig', array());
+})->bind('capitulo5');
+
 
 $app->error(function (\Exception $e, Request $request, $code) use ($app) {
     if ($app['debug']) {
