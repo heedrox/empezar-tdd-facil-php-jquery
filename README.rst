@@ -1,77 +1,37 @@
-Silex Skeleton
-==============
+EMPEZAR TDD ES FACIL
+====================
 
-Welcome to the Silex Skeleton - a fully-functional Silex application that you
-can use as the skeleton for your new applications.
+¿Quieres empezar haciendo TDD y no sabes cómo hacerlo?
 
-This document contains information on how to start using the Silex Skeleton.
+Así me encontraba yo hace un año, hasta que, de repente, mi cabeza hizo click.
+Después de ese click, llevo un año desarrollando código donde desarrollo el test
+antes que el código.
 
-Creating a Silex Application
-----------------------------
+¿Cómo he llegado a esa situación? Practicando. Practicando mucho.
 
-Silex uses `Composer`_ to ease the creation of a new project:
+Pero sobre todo, sin dudar. Antes me sentía paralizado porque escuchaba que
+si mi código estaba mal diseñado, no podía hacer tests. Si no utilizaba
+un framework correcto, podía encontrarme con grandes problemas en un futuro.
 
-.. code-block:: console
+Pero nadie me daba soluciones. Porque no existe la solución correcta.
 
-    $ composer create-project fabpot/silex-skeleton path/to/install "~2.0"
+Después de todo este tiempo, he descubierto que la única forma de aprender es empezar.
 
-Composer will create a new Silex project under the `path/to/install` directory.
+Empezar y equivocarse.
 
-Browsing the Demo Application
------------------------------
+Por eso escribo esto. Con ganas de aportar "a la comunidad", dando algunas claves
+dirigidas a todos aquellos que saben algo de TDD pero que no encuentran la forma
+de empezar.
 
-Congratulations! You're now ready to use Silex.
+Son algunas reflexiones mías, junto a código, mucho código, donde demuestro que
+da igual lo acoplado que esté tu código, el framework que escojamos, el diseño que
+utilicemos para impementar nuestro código... Da igual todo eso, porque lo importante
+es empezar. Empezar y aprender.
 
-To see a real-live Silex page in action, start the PHP built-in web server with
-command:
+Este GIT es el código que da soporte a toda la documentación que estoy recopilando aquí:
 
-.. code-block:: console
+https://drive.google.com/drive/folders/0B5V6zjUzJ7TDZkZNQUd2eUFVQ0U
 
-    $ cd path/to/install
-    $ COMPOSER_PROCESS_TIMEOUT=0 composer run
-
-Then, browse to http://localhost:8888/index_dev.php/
-
-Getting started with Silex
---------------------------
-
-This distribution is meant to be the starting point for your Silex applications.
-
-A great way to start learning Silex is via the `Documentation`_, which will
-take you through all the features of Silex.
-
-What's inside?
----------------
-
-The Silex Skeleton is configured with the following service providers:
-
-* `ValidatorServiceProvider`_ - Provides a service for validating data. It is
-  most useful when used with the FormServiceProvider, but can also be used
-  standalone.
-
-* `ServiceControllerServiceProvider`_ - As your Silex application grows, you
-  may wish to begin organizing your controllers in a more formal fashion.
-  Silex can use controller classes out of the box, but with a bit of work,
-  your controllers can be created as services, giving you the full power of
-  dependency injection and lazy loading.
-
-* `TwigServiceProvider`_ - Provides integration with the Twig template engine.
-
-* `WebProfilerServiceProvider`_ - Enable the Symfony web debug toolbar and
-  the Symfony profiler in your Silex application when developing.
-
-* `MonologServiceProvider`_ - Enable logging in the development environment.
-
-Read the `Providers`_ documentation for more details about Silex Service
-Providers.
-
-Enjoy!
-
-.. _Composer: http://getcomposer.org/
-.. _Documentation: http://silex.sensiolabs.org/documentation
-.. _ValidatorServiceProvider: http://silex.sensiolabs.org/doc/providers/validator.html
-.. _ServiceControllerServiceProvider: http://silex.sensiolabs.org/doc/providers/service_controller.html
-.. _TwigServiceProvider: http://silex.sensiolabs.org/doc/providers/twig.html
-.. _WebProfilerServiceProvider: http://github.com/silexphp/Silex-WebProfiler
-.. _MonologServiceProvider: http://silex.sensiolabs.org/doc/providers/monolog.html
-.. _Providers: http://silex.sensiolabs.org/doc/providers.html
+(si estás leyendo esto antes de publicarlo "oficialmente", pues no sé si alguna vez
+ lo haré, estaré encantado de darte acceso y me eches un cable para ver si realmente
+ esto sirve para algo).
