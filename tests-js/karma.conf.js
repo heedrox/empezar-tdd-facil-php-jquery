@@ -15,6 +15,7 @@ module.exports = function(config) {
 
         // list of files / patterns to load in the browser
         files: [
+            {pattern: 'templates/*.twig', included: false, served: true},
             'web/vendor/jquery-2.2.4.js',
             'node_modules/jasmine-jquery/lib/jasmine-jquery.js',
             'web/js/**/*.js',
