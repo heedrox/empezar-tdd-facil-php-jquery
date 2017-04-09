@@ -23,6 +23,10 @@ module.exports = function(config) {
             'tests-js/**/*.js'
         ],
 
+        //proxies for js from twig files
+        proxies: {
+            "/js/": "/base/web/js"
+        },
 
         // list of files to exclude
         exclude: [
