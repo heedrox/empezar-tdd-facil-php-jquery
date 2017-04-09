@@ -1,0 +1,43 @@
+{% extends "layout.html.twig" %}
+{% set active_page = "capitulo6" %}
+{% block javascripts %}
+    <script src="js/lib/remoteService.js"></script>
+    <script src="js/capitulo6/enviarFormulario6.js"></script>
+{% endblock %}
+{% block content %}
+    <p>&nbsp;</p>
+    <div class="page-header"><h1>Testeando llamadas AJAX</h1></div>
+    <div class="row">
+        <div class="col-xs-12">
+            <form>
+                <div class="form-group">
+                    <label for="email">Dirección de email</label>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+                    <input name="fechaNacimiento" type="date" class="form-control" id="fechaNacimiento">
+                </div>
+                <div class="form-group">
+                    <label for="paquete">Selecciona el paquete a adquirir</label>
+                    <select name="paquete" class="form-control" id="paquete">
+                        <option value=""> -- Selecciona -- </option>
+                        <option value="BASICO">Básico (50 eur)</option>
+                        <option value="AVANZADO">Avanzado (200 eur)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="numMensualidades">Número de mensualidades a hacer el pago</label>
+                    <input name="numMensualidades" class="form-control" type="number" min="1" max="10" id="numMensualidades">
+                </div>
+                <button type="button" onclick="enviarFormulario6()" class="btn btn-default">Enviar</button>
+            </form>
+
+        </div>
+        <div class="col-xs-12">
+            <h3>Resultado del servidor</h3>
+            <pre id="resultadoServidor"></pre>
+        </div>
+    </div>
+
+{% endblock %}

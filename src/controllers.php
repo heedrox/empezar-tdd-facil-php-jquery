@@ -22,6 +22,17 @@ $app->get('/capitulo5', function() use ($app) {
     return $app['twig']->render('capitulo5.html.twig', array());
 })->bind('capitulo5');
 
+$app->get('/capitulo6', function() use ($app) {
+    return $app['twig']->render('capitulo6.html.twig', array());
+})->bind('capitulo6');
+
+$app->post('/api/capitulo6', function() use ($app) {
+    $response = new Response(json_encode($_POST));
+    $response->headers->set('Content-Type', 'application/json');
+
+    return $response;
+})->bind('apiCapitulo6');
+
 
 $app->error(function (\Exception $e, Request $request, $code) use ($app) {
     if ($app['debug']) {
