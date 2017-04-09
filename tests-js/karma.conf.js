@@ -18,6 +18,7 @@ module.exports = function(config) {
             {pattern: 'templates/*.twig', included: false, served: true},
             'web/vendor/jquery-2.2.4.js',
             'node_modules/jasmine-jquery/lib/jasmine-jquery.js',
+            'node_modules/jasmine-data-provider/src/index.js',
             'web/js/**/*.js',
             'tests-js/**/*.js'
         ],
