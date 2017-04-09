@@ -83,11 +83,11 @@ describe("enviarformulario6 hace una llamada ajax a api/capitulo6 con los datos 
     });
 
     it("escribe el resultado de la llamada en la capa #resultadoServidor", function() {
-        spyOn(RemoteService, "post").and.returnValue(unaPromesaConValor("{ 'un': 'json', 'de' : 'ejemplo' }"));
+        spyOn(RemoteService, "post").and.returnValue(unaPromesaConValor({ 'un': 'json', 'de': 'ejemplo'}));
 
         enviarFormulario6();
 
-        expect($('#resultadoServidor').html()).toBe("{ 'un': 'json', 'de' : 'ejemplo' }");
+        expect($('#resultadoServidor').html()).toBe('{"un":"json","de":"ejemplo"}');
     });
 
     function unaPromesaConValor(x) {

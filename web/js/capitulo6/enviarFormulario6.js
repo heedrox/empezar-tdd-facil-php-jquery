@@ -36,6 +36,6 @@ function enviarFormulario6() {
     }
 
     function escribirEnResultadoServidor(resultado) {
-        $('#resultadoServidor').html(resultado);
+        $('#resultadoServidor').html(JSON.stringify(resultado));
     }
 }
