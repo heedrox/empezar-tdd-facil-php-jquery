@@ -5,6 +5,9 @@ function enviarFormulario() {
     } else if ($('#fechaNacimiento').val() == "") {
         $('#mensajeValidacion').show();
         $('#textoValidacion').html("fechaNacimiento");
+    } else if ($('#paquete').val() == "") {
+        $('#mensajeValidacion').show();
+        $('#textoValidacion').html("paquete");
     } else {
         $('#mensajeValidacion').hide();
     }

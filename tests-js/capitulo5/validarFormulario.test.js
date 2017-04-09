@@ -15,9 +15,9 @@ describe("validarFormulario valida el formulario del capitulo 5", function() {
     });
 
     describe("validación incorrecta", function() {
-        var camposQueCausanValidacionIncorrecta = [ "email", "fechaNacimiento"];
+        var camposQueCausanValidacionIncorrecta = [ "email", "fechaNacimiento", "paquete"];
 
-        camposQueCausanValidacionIncorrecta.forEach(function(campo) {
+        using(camposQueCausanValidacionIncorrecta, function(campo) {
             it("muestra mensaje error si "+campo+" no rellenado", function() {
                 dadoUnFormularioRellenadoCorrectamente();
                 $('#'+campo).val('');
@@ -28,11 +28,10 @@ describe("validarFormulario valida el formulario del capitulo 5", function() {
                 expect($('#textoValidacion').html()).toBe(campo);
             });
         });
-
     });
+    function dadoUnFormularioRellenadoCorrectamente() {
+        $('#email').val("unemail@cualquiera.com");
+        $('#fechaNacimiento').val(new Date());
+        $('#paquete').val("BASICO");
+    }
 });
-
-function dadoUnFormularioRellenadoCorrectamente() {
-    $('#email').val("unemail@cualquiera.com");
-    $('#fechaNacimiento').val(new Date());
-}
