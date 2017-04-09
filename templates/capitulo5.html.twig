@@ -1,5 +1,8 @@
 {% extends "layout.html.twig" %}
 {% set active_page = "capitulo5" %}
+{% block javascripts %}
+    <script src="js/capitulo5/validarFormulario.js"></script>
+{% endblock %}
 {% block content %}
     <p>&nbsp;</p>
     <div class="page-header"><h1>Bienvenido</h1></div>
@@ -45,7 +48,7 @@
                         <input name="condiciones" type="checkbox" val="1" id="condiciones"> Acepto las condiciones legales
                     </label>
                 </div>
-                <button type="submit" class="btn btn-default">Enviar</button>
+                <button type="button" onclick="enviarFormulario()" class="btn btn-default">Enviar</button>
             </form>
 
         </div>
