@@ -33,6 +33,7 @@ $app->post('/api/capitulo6', function() use ($app) {
     return $response;
 })->bind('apiCapitulo6');
 
+$app["cors-enabled"]($app);
 
 $app->error(function (\Exception $e, Request $request, $code) use ($app) {
     if ($app['debug']) {

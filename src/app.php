@@ -11,6 +11,9 @@ $app->register(new ServiceControllerServiceProvider());
 $app->register(new AssetServiceProvider());
 $app->register(new TwigServiceProvider());
 $app->register(new HttpFragmentServiceProvider());
+$app->register(new JDesrosiers\Silex\Provider\CorsServiceProvider(), [
+    "cors.allowOrigin" => "*",
+]);
 $app['twig'] = $app->extend('twig', function ($twig, $app) {
     // add custom globals, filters, tags, ...
 
