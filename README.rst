@@ -32,6 +32,4 @@ Este GIT es el código que da soporte a toda la documentación que estoy recopil
 
 https://drive.google.com/drive/folders/0B5V6zjUzJ7TDZkZNQUd2eUFVQ0U
 
-(si estás leyendo esto antes de publicarlo "oficialmente", pues no sé si alguna vez
- lo haré, estaré encantado de darte acceso y me eches un cable para ver si realmente
- esto sirve para algo).
+(si estás leyendo esto antes de publicarlo "oficialmente", pues no sé si alguna vez lo haré, estaré encantado de darte acceso y me eches un cable para ver si realmente esto sirve para algo).
